@@ -1,9 +1,11 @@
 
 export function formatAnimalData(animalData: any): any {
-  const headers = Object.keys(animalData)
-  const cells = headers.map((it: string) => animalData[it].qty)
+  const animals = Object.keys(animalData)
+  const cells = animals.map((it: string) => animalData[it].qty)
+  animalData.cats.dates.unshift('Animals')
   return {
-    headers: headers,
+    headers: animalData.cats.dates,
+    animals: animals,
     cells: cells
   }
 }

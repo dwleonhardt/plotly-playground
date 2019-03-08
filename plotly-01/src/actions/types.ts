@@ -1,2 +1,1 @@
-export const CATS = 'cats'
-export const DOGS = 'DOGS'
+export const USDEXCHANGE = 'usd_exchange'
